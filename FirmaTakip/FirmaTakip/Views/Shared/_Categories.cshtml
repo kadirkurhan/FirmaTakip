@@ -1,0 +1,12 @@
+﻿<form class="form" asp-action="index">
+    <input name="q" class="form-control mr-sm-2 d-inline" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-light btn-sm d-none" type="submit"><i class="fas fa-user-friends"></i></button>
+</form>
+<ul class="list-group list-group-flush">
+    <li class="list-group-item"><a id="hoverable-links" style="text-decoration: none; color:#111e6c;" asp-controller="Home" asp-action="Index"><i class="fas fa-user-friends"></i><span class="ml-4">Firmalar</span></a></li>
+    <li class="list-group-item"><a id="hoverable-links" style="text-decoration: none; color:#111e6c;" asp-controller="category" asp-action="index"><i class="fab fa-buffer"></i><span class="ml-4">Kategoriler</span></a>   </li>
+    <li class="list-group-item"><a id="hoverable-links" style="text-decoration: none; color:#111e6c;" asp-controller="bank" asp-action="index"><i class="far fa-flag"></i><span class="ml-4">Hesaplar</span></a>   </li>
+    <li class="list-group-item"><a id="hoverable-links" style="text-decoration: none; color:#111e6c;" asp-controller="mailaccount" asp-action="index"><i class="far fa-envelope"></i><span class="ml-4">Postalar</span></a>   </li>
+    <li class="list-group-item"><a id="hoverable-links" style="text-decoration: none; color:#111e6c;" asp-controller="note" asp-action="index"><i class="far fa-sticky-note"></i><span class="ml-4">Notlar</span></a>   </li>
+
+</ul>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmaTakip", "FirmaTakip\FirmaTakip.csproj", "{2740BF12-7F4A-4CE1-9ABD-E0C8296A7523}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2740BF12-7F4A-4CE1-9ABD-E0C8296A7523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2740BF12-7F4A-4CE1-9ABD-E0C8296A7523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2740BF12-7F4A-4CE1-9ABD-E0C8296A7523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2740BF12-7F4A-4CE1-9ABD-E0C8296A7523}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F239F89C-3B5C-4A9A-A985-0BF3DD63B5AA}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,84 @@
+﻿@model AddCompanyModel
+    <form method="POST" class="my-3" asp-action="createcompany">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">Firma Adı</label>
+                    <span asp-validation-for="@Model.CompanyName"></span>
+                    <input asp-for="@Model.CompanyName" class="form-control" type="text">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">Ülke</label>
+                    <span asp-validation-for="@Model.CompanyCountry"></span>
+                    <input asp-for="@Model.CompanyCountry" class="form-control" type="text">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">Şehir</label>
+                    <span asp-validation-for="@Model.CompanyCity"></span>
+                    <input asp-for="@Model.CompanyCity" class="form-control" type="text">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">İlçe</label>
+                    <span asp-validation-for="@Model.CompanyTown"></span>
+                    <input asp-for="@Model.CompanyTown" class="form-control" type="text">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">Adres</label>
+                    <span asp-validation-for="@Model.CompanyAddress"></span>
+                    <input asp-for="@Model.CompanyAddress" class="form-control" type="text">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">Telefon</label>
+                    <span asp-validation-for="@Model.PhoneNumber"></span>
+                    <input asp-for="@Model.PhoneNumber" class="form-control" type="text">
+
+                </div>
+            </div>
+
+        </div>
+        
+        
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Sektör</label>
+                    <select @*asp-for="@Model.CompanyCategories"*@ multiple class="form-control" id="exampleFormControlSelect2">
+                        <option value="1">Eğitim</option>
+                        <option value="2">Bilişim</option>
+                        <option value="3">İmalat</option>
+                        <option value="4">Gıda</option>
+                        <option value="5">Giyim</option>
+                        <option value="5">Tekstil</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+       
+
+
+
+        <button class="btn btn-info" type="submit">Add</button>
+
+    </form>

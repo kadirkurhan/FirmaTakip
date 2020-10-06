@@ -1,0 +1,83 @@
+﻿@model FirmaTakip.Entities.Company
+
+<div class="text-center">
+    <table class="table table-sm table-hover table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Firma Adı</th>
+                <th scope="col">Ülke</th>
+                <th scope="col">Şehir</th>
+                <th scope="col">İlçe</th>
+                <th scope="col">Adres</th>
+                <th scope="col">Telefon</th>
+                <th scope="col">Teklif</th>
+                <th scope="col">Son Kontrol</th>
+                <th scope="col">Kontrol</th>
+                <th scope="col">Borcu</th>
+                <th scope="col">İş Durumu</th>
+                <th scope="col">Sektör</th>
+                <th scope="col">İşlem</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">@Model.CompanyId</th>
+                <td>@Model.CompanyName</td>
+                <td>@Model.CompanyCountry</td>
+                <td>@Model.CompanyCity</td>
+                <td>@Model.CompanyTown </td>
+                <td>@Model.CompanyAddress</td>
+                <td>@Model.PhoneNumber</td>
+                <td>
+
+                    @if (Model.IsOffer)
+                    {
+                        <p class="text-success">Verildi</p>
+                    }
+                    else
+                    {
+                        <p class="text-danger">Verilmedi</p>
+
+                    }
+                </td>
+                <td>
+                    @Model.LastControlDate.ToString("MM/dd/yyyy")
+
+                </td>
+                <td>
+
+                    @if (Model.WillControl)
+                    {
+                        <p class="text-success">Edildi</p>
+                    }
+                    else
+                    {
+                        <p class="text-danger">Edilecek</p>
+                    }
+
+
+                </td>
+                <td>@Model.DebtAmount.ToString("C2")</td>
+                <td>
+
+                    @if (Model.ActiveOrNot)
+                    {
+                        <p class="text-success">Devam</p>
+                    }
+                    else
+                    {
+                        <p class="text-danger">Sonlandı</p>
+
+                    }
+
+
+                </td>
+                <td><getCategoryName company-id="@Model.CompanyId"></getCategoryName> @Model.CompanyCategories </td>
+
+                <td><button>kategori ekle</button></td>
+        </tbody>
+
+    </table>

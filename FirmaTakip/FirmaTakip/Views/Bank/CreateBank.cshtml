@@ -1,0 +1,69 @@
+﻿@model AddBankModel
+    <form method="POST" class="my-3" asp-action="createbank">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">Banka</label>
+                    <span asp-validation-for="@Model.BankName"></span>
+                    <input asp-for="@Model.BankName" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">Kart No</label>
+                    <span asp-validation-for="@Model.CardNo"></span>
+                    <input asp-for="@Model.CardNo" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">Iban</label>
+                    <span asp-validation-for="@Model.Iban"></span>
+                    <input asp-for="@Model.Iban" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">Password</label>
+                    <span asp-validation-for="@Model.Password"></span>
+                    <input asp-for="@Model.Password" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">SKT</label>
+                    <span asp-validation-for="@Model.SKT"></span>
+                    <input asp-for="@Model.SKT" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">CVVB</label>
+                    <span asp-validation-for="@Model.CVVB"></span>
+                    <input asp-for="@Model.CVVB" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">CVVK</label>
+                    <span asp-validation-for="@Model.CVVK"></span>
+                    <input asp-for="@Model.CVVK" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-info" type="submit">Add</button>
+
+    </form>
